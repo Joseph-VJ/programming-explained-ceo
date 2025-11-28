@@ -1001,236 +1001,185 @@
             </p>
         </div>
         
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
-            <!-- CPU -->
-            <div class="glass-card rounded-2xl p-6 border-2 border-blue-200">
-                <div class="flex items-start gap-3 md:items-center md:gap-4 mb-6">
-                    <div class="w-16 h-16 rounded-xl bg-blue-100 flex items-center justify-center text-3xl">🧠</div>
+        <!-- Easy-to-understand analogy with real images -->
+        <div class="glass-card rounded-2xl p-4 md:p-6 mb-6 bg-gradient-to-r from-amber-50 to-white border-2 border-amber-200">
+            <h3 class="text-lg md:text-xl font-bold text-amber-600 mb-4 text-center">🎯 The BEST Way to Understand CPU vs GPU</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- CPU = Math Professor -->
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=200&fit=crop&crop=face" 
+                         alt="Professor thinking" 
+                         class="w-full h-32 md:h-40 object-cover rounded-xl mb-3 border-2 border-blue-300">
+                    <div class="text-3xl mb-2">🧠 CPU = Math Professor</div>
+                    <div class="text-slate-700 font-medium mb-2">Can solve ANY complex problem...</div>
+                    <div class="text-blue-600 font-bold text-lg">But only 1 at a time</div>
+                    <div class="text-sm text-slate-500 mt-2">Calculus, physics, philosophy - one by one</div>
+                </div>
+                <!-- GPU = 1000 Calculators -->
+                <div class="text-center">
+                    <img src="https://images.unsplash.com/photo-1587145820266-a5951ee6f620?w=300&h=200&fit=crop" 
+                         alt="Many calculators" 
+                         class="w-full h-32 md:h-40 object-cover rounded-xl mb-3 border-2 border-emerald-300">
+                    <div class="text-3xl mb-2">🔢 GPU = 1000s of Calculators</div>
+                    <div class="text-slate-700 font-medium mb-2">Can only do simple math...</div>
+                    <div class="text-emerald-600 font-bold text-lg">But ALL at the SAME time!</div>
+                    <div class="text-sm text-slate-500 mt-2">Add, multiply, repeat × 16,000 together</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-6">
+            <!-- CPU Card with Real Image -->
+            <div class="glass-card rounded-2xl p-4 md:p-6 border-2 border-blue-200">
+                <div class="flex items-center gap-4 mb-4">
+                    <img src="https://images.unsplash.com/photo-1555617981-dac3880eac6e?w=100&h=100&fit=crop" 
+                         alt="Intel CPU chip" 
+                         class="w-16 h-16 rounded-xl object-cover border-2 border-blue-300">
                     <div>
                         <h3 class="text-lg md:text-xl font-bold text-blue-600">CPU</h3>
                         <div class="text-sm md:text-base text-slate-700">Central Processing Unit</div>
                     </div>
                 </div>
                 
-                <!-- Visual: Few powerful cores -->
-                <div class="grid grid-cols-4 gap-2 mb-6">
-                    <div class="h-16 rounded-lg bg-sky-500 flex items-center justify-center font-bold text-slate-900">C1</div>
-                    <div class="h-16 rounded-lg bg-sky-500 flex items-center justify-center font-bold text-slate-900">C2</div>
-                    <div class="h-16 rounded-lg bg-sky-500 flex items-center justify-center font-bold text-slate-900">C3</div>
-                    <div class="h-16 rounded-lg bg-sky-500 flex items-center justify-center font-bold text-slate-900">C4</div>
+                <!-- Visual: Few Big Boxes -->
+                <div class="bg-blue-50 rounded-xl p-4 mb-4">
+                    <div class="text-sm text-slate-600 mb-2 text-center">4-24 Powerful Cores</div>
+                    <div class="flex justify-center gap-3">
+                        <div class="w-14 h-14 rounded-lg bg-blue-500 flex items-center justify-center text-white font-bold shadow-lg">1</div>
+                        <div class="w-14 h-14 rounded-lg bg-blue-500 flex items-center justify-center text-white font-bold shadow-lg">2</div>
+                        <div class="w-14 h-14 rounded-lg bg-blue-500 flex items-center justify-center text-white font-bold shadow-lg">3</div>
+                        <div class="w-14 h-14 rounded-lg bg-blue-500 flex items-center justify-center text-white font-bold shadow-lg">4</div>
+                    </div>
                 </div>
                 
                 <div class="space-y-2 text-sm">
                     <div class="flex justify-between">
-                        <span class="text-slate-600">Cores:</span>
-                        <span class="text-slate-900">4-24 (powerful)</span>
+                        <span class="text-slate-600">🎯 Best for:</span>
+                        <span class="text-slate-900">Complex, step-by-step tasks</span>
                     </div>
                     <div class="flex justify-between">
-                        <span class="text-slate-600">Best for:</span>
-                        <span class="text-slate-900">Sequential tasks</span>
-                    </div>
-                    <div class="flex justify-between">
-                        <span class="text-slate-600">Analogy:</span>
-                        <span class="text-blue-600">4 PhD professors</span>
+                        <span class="text-slate-600">📱 Example:</span>
+                        <span class="text-slate-900">Running your apps, browsing</span>
                     </div>
                 </div>
             </div>
             
-            <!-- GPU -->
-            <div class="glass-card rounded-2xl p-6 border-2 border-emerald-200">
-                <div class="flex items-start gap-3 md:items-center md:gap-4 mb-4">
-                    <div class="w-16 h-16 rounded-xl bg-emerald-100 flex items-center justify-center text-3xl">🎮</div>
+            <!-- GPU Card with Real Image -->
+            <div class="glass-card rounded-2xl p-4 md:p-6 border-2 border-emerald-200">
+                <div class="flex items-center gap-4 mb-4">
+                    <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=100&h=100&fit=crop" 
+                         alt="NVIDIA GPU graphics card" 
+                         class="w-16 h-16 rounded-xl object-cover border-2 border-emerald-300">
                     <div>
                         <h3 class="text-lg md:text-xl font-bold text-emerald-600">GPU</h3>
                         <div class="text-sm md:text-base text-slate-700">Graphics Processing Unit</div>
                     </div>
                 </div>
                 
-                <!-- Visual: Many small cores (scaled representation of 16,896 CUDA cores) -->
-                <div class="mb-4">
-                    <div class="text-sm md:text-sm md:text-xs text-slate-500 mb-2 text-center">Each dot = ~132 CUDA cores (showing scale of 16,896 total)</div>
-                    <div class="grid grid-cols-16 gap-0.5">
-                        <!-- 128 dots representing the massive parallelism -->
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/70"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/70"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/70"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/70"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/70"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/70"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/70"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/70"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/70"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/70"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/70"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/70"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/70"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/70"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/70"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/70"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/60"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/60"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/60"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/60"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/60"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/60"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/60"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/60"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/60"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/60"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/60"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/60"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/60"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/60"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/60"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/60"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/40"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
-                        <div class="h-2 w-2 rounded-sm bg-emerald-500/30"></div>
+                <!-- Visual: Many Small Boxes -->
+                <div class="bg-emerald-50 rounded-xl p-4 mb-4">
+                    <div class="text-sm text-slate-600 mb-2 text-center">16,896 Simple Cores (NVIDIA H100)</div>
+                    <div class="flex flex-wrap justify-center gap-1">
+                        <!-- Show 48 tiny squares to represent thousands -->
+                        <div class="w-3 h-3 rounded bg-emerald-500"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-500"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-500"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-500"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-500"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-500"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-400"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-400"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-400"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-400"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-400"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-400"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-300"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-300"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-300"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-300"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-300"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-300"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-500"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-500"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-500"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-500"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-500"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-500"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-400"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-400"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-400"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-400"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-400"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-400"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-300"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-300"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-300"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-300"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-300"></div>
+                        <div class="w-3 h-3 rounded bg-emerald-300"></div>
                     </div>
+                    <div class="text-xs text-slate-500 text-center mt-2">× 470 more rows like this!</div>
                 </div>
                 
                 <div class="space-y-2 text-sm">
                     <div class="flex justify-between">
-                        <span class="text-slate-600">CUDA Cores:</span>
-                        <span class="text-slate-900 font-bold">16,896</span>
+                        <span class="text-slate-600">🎯 Best for:</span>
+                        <span class="text-slate-900">Same task × millions at once</span>
                     </div>
                     <div class="flex justify-between">
-                        <span class="text-slate-600">Best for:</span>
-                        <span class="text-slate-900">Parallel tasks (AI/ML)</span>
-                    </div>
-                    <div class="flex justify-between">
-                        <span class="text-slate-600">Analogy:</span>
-                        <span class="text-emerald-600">16,896 simple workers</span>
+                        <span class="text-slate-600">🤖 Example:</span>
+                        <span class="text-slate-900">AI, games, video editing</span>
                     </div>
                 </div>
             </div>
         </div>
         
-        <div class="glass-card rounded-xl p-3 md:p-5 bg-gradient-to-r from-purple-50 to-white mb-6">
-            <h3 class="font-bold mb-2">🤖 Why AI Needs GPUs</h3>
-            <p class="text-slate-600 text-sm">
-                Training GPT-4 requires doing the same math operation on billions of numbers simultaneously. 
-                GPUs can do 10,000+ calculations at once. CPUs can only do 4-24.
-                <span class="text-purple-600 font-bold">That's why an H100 GPU costs $25,000-$40,000.</span>
+        <!-- Why AI Needs GPUs - Visual Example -->
+        <div class="glass-card rounded-xl p-4 md:p-5 bg-gradient-to-r from-purple-50 to-white mb-4">
+            <h3 class="font-bold text-purple-600 mb-3">🤖 Why AI Needs GPUs - A Simple Example</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-3">
+                <div class="bg-blue-50 rounded-lg p-3 text-center">
+                    <div class="text-sm font-bold text-blue-600 mb-2">CPU Approach</div>
+                    <div class="text-2xl mb-1">🧮 + 🧮 + 🧮 + 🧮</div>
+                    <div class="text-xs text-slate-600">4 calculations, one after another</div>
+                    <div class="text-lg font-bold text-blue-700 mt-2">= 4 seconds</div>
+                </div>
+                <div class="bg-emerald-50 rounded-lg p-3 text-center">
+                    <div class="text-sm font-bold text-emerald-600 mb-2">GPU Approach</div>
+                    <div class="text-2xl mb-1">🧮🧮🧮🧮 (all at once!)</div>
+                    <div class="text-xs text-slate-600">16,000+ calculations simultaneously</div>
+                    <div class="text-lg font-bold text-emerald-700 mt-2">= 0.001 seconds</div>
+                </div>
+            </div>
+            <p class="text-slate-700 text-sm text-center">
+                <span class="text-purple-600 font-bold">AI training = billions of similar math operations.</span> 
+                That's why an H100 GPU costs <span class="font-bold">$25,000-$40,000</span>!
             </p>
         </div>
         
         <!-- Real GPU Image & Cost -->
-        <div class="glass-card rounded-xl p-2 md:p-4">
-            <div class="grid md:grid-cols-1 md:grid-cols-3 gap-4 items-center">
+        <div class="glass-card rounded-xl p-3 md:p-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-center">
                 <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?w=400&h=250&fit=crop" 
-                     alt="NVIDIA GPU" 
-                     class="w-full h-28 object-cover rounded-lg">
+                     alt="NVIDIA GPU graphics card"
+                     class="w-full h-28 object-cover rounded-lg border-2 border-emerald-200">
                 <div class="md:col-span-2">
                     <h4 class="font-bold text-slate-900 mb-2">💰 The AI Hardware Gold Rush</h4>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-2 text-center text-xs">
-                        <div class="bg-slate-100 rounded p-2">
+                    <div class="grid grid-cols-3 gap-2 text-center text-xs">
+                        <div class="bg-gradient-to-b from-emerald-100 to-emerald-50 rounded p-2">
                             <div class="text-emerald-600 font-bold">NVIDIA H100</div>
-                            <div class="text-slate-600">$25,000-$40,000</div>
+                            <div class="text-slate-700">$25,000-$40,000</div>
                         </div>
-                        <div class="bg-slate-100 rounded p-2">
+                        <div class="bg-gradient-to-b from-blue-100 to-blue-50 rounded p-2">
                             <div class="text-blue-600 font-bold">16,896 cores</div>
-                            <div class="text-slate-600">CUDA cores</div>
+                            <div class="text-slate-700">CUDA cores</div>
                         </div>
-                        <div class="bg-slate-100 rounded p-2">
+                        <div class="bg-gradient-to-b from-purple-100 to-purple-50 rounded p-2">
                             <div class="text-purple-600 font-bold">80GB HBM3</div>
-                            <div class="text-slate-600">Memory</div>
+                            <div class="text-slate-700">Memory</div>
                         </div>
                     </div>
-                    <p class="text-sm md:text-sm md:text-xs text-slate-500 mt-2">NVIDIA's market cap: $3+ trillion (2024) - more than most countries' GDP!</p>
+                    <p class="text-sm text-slate-600 mt-2 text-center">🏆 NVIDIA's market cap: $3+ trillion (2024) - more than most countries' GDP!</p>
                 </div>
             </div>
         </div>
