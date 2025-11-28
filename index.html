@@ -141,6 +141,7 @@
             box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
+        /* ========== CONSISTENT SLIDE LAYOUTS ========== */
         .slide {
             min-height: 100vh;
             width: 100%;
@@ -149,12 +150,15 @@
             left: 0;
             display: none;
             visibility: hidden;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
-            padding: 2rem;
+            padding: 2rem 3rem;
+            padding-top: 5rem;
+            padding-bottom: 6rem;
             background-color: var(--color-bg-primary);
             z-index: 1;
             opacity: 0;
+            overflow-y: auto;
         }
         
         .slide.active { 
@@ -172,17 +176,77 @@
         }
         
         .slide-title {
-            font-size: clamp(2rem, 5vw, 4rem);
+            font-size: clamp(1.75rem, 4vw, 3.5rem);
             font-weight: 800;
-            line-height: 1.1;
-            margin-bottom: 1rem;
+            line-height: 1.15;
+            margin-bottom: 0.75rem;
         }
         
         .slide-subtitle {
-            font-size: clamp(1rem, 2vw, 1.5rem);
+            font-size: clamp(1rem, 2vw, 1.35rem);
             color: var(--color-text-secondary);
-            max-width: 800px;
+            max-width: 900px;
+            line-height: 1.5;
+            margin-bottom: 1.5rem;
         }
+        
+        /* Consistent grid layouts */
+        .grid { gap: 1.25rem; }
+        .grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+        .grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+        .grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+        
+        /* Consistent card styles */
+        .glass-card {
+            padding: 1.5rem;
+            border-radius: 1rem;
+            height: fit-content;
+        }
+        
+        /* Consistent typography */
+        h1, h2, h3, h4 { font-weight: 700; color: var(--color-text-primary); }
+        h3 { font-size: 1.25rem; margin-bottom: 1rem; }
+        h4 { font-size: 1.1rem; margin-bottom: 0.75rem; }
+        p { font-size: 1.05rem; line-height: 1.65; color: var(--color-text-secondary); }
+        
+        /* Better text sizing classes */
+        .text-sm { font-size: 0.95rem; line-height: 1.5; }
+        .text-xs { font-size: 0.85rem; line-height: 1.45; }
+        
+        /* Consistent image styling */
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.75rem;
+            object-fit: cover;
+        }
+        
+        /* Better mono/code text */
+        .font-mono { 
+            font-family: 'JetBrains Mono', monospace; 
+            font-size: 0.95em;
+        }
+        
+        /* Consistent info boxes */
+        .bg-slate-100, .bg-blue-50, .bg-purple-50, .bg-pink-50, 
+        .bg-emerald-50, .bg-green-50, .bg-amber-50, .bg-red-50,
+        .bg-sky-50, .bg-cyan-50, .bg-orange-50 {
+            padding: 1rem;
+            border-radius: 0.75rem;
+        }
+        
+        /* Better list styling */
+        li { 
+            font-size: 1rem; 
+            line-height: 1.6; 
+            margin-bottom: 0.375rem;
+            color: var(--color-text-secondary);
+        }
+        
+        /* Emoji sizing */
+        .text-2xl { font-size: 1.5rem; }
+        .text-3xl { font-size: 1.875rem; }
+        .text-4xl { font-size: 2.25rem; }
         
         .slide-number {
             position: absolute;
