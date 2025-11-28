@@ -1,0 +1,1227 @@
+<!-- ═══════════════════════════════════════════════════════════════════════════
+     CHAPTER 3: PROGRAMMING LANGUAGES (Slides 19-33) - SIMPLIFIED VERSION
+     Languages explained like different tools in a toolbox
+     ═══════════════════════════════════════════════════════════════════════════ -->
+
+<!-- SLIDE 19: Chapter Intro - SIMPLIFIED -->
+<section class="slide" data-slide="18">
+    <div class="slide-number text-gradient">19</div>
+    
+    <div class="slide-content text-center">
+        <div class="mb-8">
+            <div class="inline-block px-4 py-2 rounded-full glass-card text-sm text-neon-cyan mb-8">
+                🛠️ Chapter 3 of 6
+            </div>
+        </div>
+        
+        <h1 class="text-5xl md:text-7xl font-black mb-6">
+            <span class="text-gradient">Programming Languages</span><br>
+            <span class="text-white">= Different Tools</span>
+        </h1>
+        
+        <p class="text-xl text-dark-300 mb-8 max-w-3xl mx-auto">
+            Just like a mechanic has wrenches, screwdrivers, and hammers - programmers have different "languages" for different jobs!
+        </p>
+        
+        <!-- Toolbox Analogy -->
+        <div class="glass-card rounded-2xl p-6 max-w-4xl mx-auto mb-8 bg-gradient-to-r from-neon-cyan/10 to-neon-purple/10">
+            <h3 class="font-bold mb-4 text-lg">🧰 Think of a Toolbox...</h3>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
+                <div class="bg-dark-800/50 rounded-lg p-3">
+                    <div class="text-3xl mb-2">🔨</div>
+                    <div class="font-bold text-neon-cyan">Python</div>
+                    <div class="text-xs text-dark-400">Easy, everyday hammer</div>
+                </div>
+                <div class="bg-dark-800/50 rounded-lg p-3">
+                    <div class="text-3xl mb-2">🔧</div>
+                    <div class="font-bold text-neon-purple">JavaScript</div>
+                    <div class="text-xs text-dark-400">Adjustable wrench</div>
+                </div>
+                <div class="bg-dark-800/50 rounded-lg p-3">
+                    <div class="text-3xl mb-2">⚡</div>
+                    <div class="font-bold text-neon-pink">Rust</div>
+                    <div class="text-xs text-dark-400">Power tool (fast!)</div>
+                </div>
+                <div class="bg-dark-800/50 rounded-lg p-3">
+                    <div class="text-3xl mb-2">🏗️</div>
+                    <div class="font-bold text-neon-green">Java</div>
+                    <div class="text-xs text-dark-400">Heavy machinery</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="glass-card rounded-xl p-4 max-w-2xl mx-auto bg-gradient-to-r from-neon-green/10 to-transparent">
+            <p class="text-sm">💼 <strong class="text-neon-green">CEO Summary:</strong> You don't need to learn any of these! Just understand what each is good for, so you know if your team is using the right tool for the job.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDE 20: Python - SIMPLIFIED -->
+<section class="slide" data-slide="19">
+    <div class="slide-number text-gradient">20</div>
+    
+    <div class="absolute top-8 left-8 lg:left-24">
+        <div class="glass-card rounded-full px-4 py-2 flex items-center gap-2">
+            <span class="text-lg">💻</span>
+            <span class="text-xs uppercase tracking-wider text-dark-400">Chapter 3</span>
+            <span class="text-xs text-neon-cyan">Languages</span>
+        </div>
+    </div>
+    
+    <div class="slide-content pt-20">
+        <div class="grid lg:grid-cols-2 gap-8">
+            <div>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-blue-500 to-yellow-500 flex items-center justify-center text-4xl">🐍</div>
+                    <div>
+                        <h1 class="text-4xl font-black text-white">Python</h1>
+                        <div class="text-dark-400 text-lg">The "Easy-to-Learn" Language</div>
+                    </div>
+                </div>
+                
+                <!-- Simple Analogy -->
+                <div class="glass-card rounded-xl p-5 mb-6 bg-gradient-to-r from-neon-cyan/10 to-transparent">
+                    <h3 class="font-bold mb-2 text-neon-cyan">🔨 Like a Simple Hammer</h3>
+                    <p class="text-sm text-dark-300">Python is the "beginner-friendly" tool. It reads almost like English! Great for quick projects, learning, and anything involving data or AI.</p>
+                </div>
+                
+                <div class="space-y-3 mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Easy to read and write</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">#1 for AI and data analysis</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-red text-xl">✗</span>
+                        <span class="text-lg">Slower than other languages</span>
+                    </div>
+                </div>
+                
+                <div class="bg-dark-800/50 rounded-lg p-4">
+                    <div class="text-sm text-dark-400 mb-2">🏢 Who uses Python?</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full bg-neon-cyan/20 text-neon-cyan text-sm">OpenAI (ChatGPT)</span>
+                        <span class="px-3 py-1 rounded-full bg-neon-purple/20 text-neon-purple text-sm">Instagram</span>
+                        <span class="px-3 py-1 rounded-full bg-neon-pink/20 text-neon-pink text-sm">Netflix</span>
+                        <span class="px-3 py-1 rounded-full bg-neon-orange/20 text-neon-orange text-sm">SpaceX</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <!-- Real Image -->
+                <div class="glass-card rounded-xl overflow-hidden mb-4">
+                    <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=200&fit=crop" 
+                         alt="Data scientist coding" class="w-full h-40 object-cover opacity-80">
+                    <div class="p-4">
+                        <div class="text-sm font-bold text-neon-cyan mb-2">Best for:</div>
+                        <div class="grid grid-cols-2 gap-2 text-sm text-dark-300">
+                            <div>🤖 AI & Machine Learning</div>
+                            <div>📊 Data Analysis</div>
+                            <div>🔬 Scientific Research</div>
+                            <div>🤖 Automation Scripts</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Simple Code Example -->
+                <div class="glass-card rounded-xl p-5">
+                    <div class="text-sm text-dark-400 mb-2">📝 Python code looks like English:</div>
+                    <div class="bg-dark-900 rounded-lg p-4 font-mono text-sm">
+                        <code class="text-neon-green">
+                            # Find the average of numbers<br>
+                            numbers = [10, 20, 30]<br>
+                            average = sum(numbers) / len(numbers)<br>
+                            print("The average is", average)
+                        </code>
+                    </div>
+                    <div class="mt-3 text-xs text-dark-400">
+                        👆 See? Almost like reading a book!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDE 21: JavaScript - SIMPLIFIED -->
+<section class="slide" data-slide="20">
+    <div class="slide-number text-gradient">21</div>
+    
+    <div class="absolute top-8 left-8 lg:left-24">
+        <div class="glass-card rounded-full px-4 py-2 flex items-center gap-2">
+            <span class="text-lg">💻</span>
+            <span class="text-xs uppercase tracking-wider text-dark-400">Chapter 3</span>
+            <span class="text-xs text-neon-cyan">Languages</span>
+        </div>
+    </div>
+    
+    <div class="slide-content pt-20">
+        <div class="grid lg:grid-cols-2 gap-8">
+            <div>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-20 h-20 rounded-2xl bg-yellow-400 flex items-center justify-center text-4xl font-black text-black">JS</div>
+                    <div>
+                        <h1 class="text-4xl font-black text-white">JavaScript</h1>
+                        <div class="text-dark-400 text-lg">The Language of Websites</div>
+                    </div>
+                </div>
+                
+                <!-- Simple Analogy -->
+                <div class="glass-card rounded-xl p-5 mb-6 bg-gradient-to-r from-neon-purple/10 to-transparent">
+                    <h3 class="font-bold mb-2 text-neon-purple">🌐 Like the "Brain" of Websites</h3>
+                    <p class="text-sm text-dark-300">Every website you've ever clicked a button on, filled a form, or saw animations - that's JavaScript making it work! It's the ONLY language that runs inside your web browser.</p>
+                </div>
+                
+                <div class="space-y-3 mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Runs on EVERY device with a browser</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Can build websites, apps, servers</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-orange text-xl">⚠</span>
+                        <span class="text-lg">Has some weird quirks</span>
+                    </div>
+                </div>
+                
+                <div class="bg-dark-800/50 rounded-lg p-4">
+                    <div class="text-sm text-dark-400 mb-2">🏢 Who uses JavaScript?</div>
+                    <div class="text-neon-yellow font-bold text-xl mb-1">EVERYONE!</div>
+                    <div class="text-sm text-dark-300">98% of all websites use JavaScript. Facebook, Google, Amazon, Netflix - all of them.</div>
+                </div>
+            </div>
+            
+            <div>
+                <!-- Visual Explanation -->
+                <div class="glass-card rounded-xl p-5 mb-4">
+                    <div class="text-sm text-dark-400 mb-3">🖱️ What JavaScript Does on Websites:</div>
+                    <div class="space-y-3">
+                        <div class="flex items-center gap-3 p-3 bg-dark-800/50 rounded-lg">
+                            <span class="text-2xl">👆</span>
+                            <div>
+                                <div class="font-bold text-neon-cyan">You Click a Button</div>
+                                <div class="text-xs text-dark-400">JavaScript detects it and does something</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-dark-800/50 rounded-lg">
+                            <span class="text-2xl">📝</span>
+                            <div>
+                                <div class="font-bold text-neon-purple">You Fill a Form</div>
+                                <div class="text-xs text-dark-400">JavaScript validates your email is correct</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 bg-dark-800/50 rounded-lg">
+                            <span class="text-2xl">🔄</span>
+                            <div>
+                                <div class="font-bold text-neon-pink">Page Updates Automatically</div>
+                                <div class="text-xs text-dark-400">Like new messages appearing without refresh</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-xl p-4 bg-gradient-to-r from-neon-yellow/10 to-transparent">
+                    <p class="text-sm"><strong class="text-neon-yellow">Fun Fact:</strong> JavaScript was created in just 10 DAYS in 1995! Despite being rushed, it became the most popular language on Earth.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDE 22: TypeScript - SIMPLIFIED -->
+<section class="slide" data-slide="21">
+    <div class="slide-number text-gradient">22</div>
+    
+    <div class="absolute top-8 left-8 lg:left-24">
+        <div class="glass-card rounded-full px-4 py-2 flex items-center gap-2">
+            <span class="text-lg">💻</span>
+            <span class="text-xs uppercase tracking-wider text-dark-400">Chapter 3</span>
+            <span class="text-xs text-neon-cyan">Languages</span>
+        </div>
+    </div>
+    
+    <div class="slide-content pt-20">
+        <div class="grid lg:grid-cols-2 gap-8">
+            <div>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-20 h-20 rounded-2xl bg-blue-600 flex items-center justify-center text-3xl font-black text-white">TS</div>
+                    <div>
+                        <h1 class="text-4xl font-black text-white">TypeScript</h1>
+                        <div class="text-dark-400 text-lg">JavaScript with Safety Features</div>
+                    </div>
+                </div>
+                
+                <!-- Simple Analogy -->
+                <div class="glass-card rounded-xl p-5 mb-6 bg-gradient-to-r from-neon-blue/10 to-transparent">
+                    <h3 class="font-bold mb-2 text-neon-blue">🛡️ Like JavaScript with a Spell-Checker</h3>
+                    <p class="text-sm text-dark-300">You know how Word underlines spelling mistakes before you send an email? TypeScript does the same for code - it catches mistakes BEFORE the code runs!</p>
+                </div>
+                
+                <div class="space-y-3 mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Catches bugs before they happen</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Works everywhere JavaScript does</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">The "professional" choice</span>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-xl p-4 bg-gradient-to-r from-neon-green/10 to-transparent">
+                    <p class="text-sm"><strong class="text-neon-green">💼 CEO Insight:</strong> If your team builds web apps, ask if they use TypeScript. It prevents bugs and makes code easier to maintain. All serious companies use it now!</p>
+                </div>
+            </div>
+            
+            <div>
+                <!-- Visual Comparison -->
+                <div class="glass-card rounded-xl p-5 mb-4">
+                    <div class="text-sm text-dark-400 mb-3">🔍 JavaScript vs TypeScript:</div>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-neon-yellow/10 border border-neon-yellow/30 rounded-lg p-3">
+                            <div class="font-bold text-neon-yellow mb-2">JavaScript</div>
+                            <div class="text-xs text-dark-300 mb-2">No checking...</div>
+                            <div class="bg-dark-900 rounded p-2 font-mono text-xs">
+                                let age = "twenty"<br>
+                                <span class="text-dark-500">// No error until you run it!</span>
+                            </div>
+                        </div>
+                        <div class="bg-neon-blue/10 border border-neon-blue/30 rounded-lg p-3">
+                            <div class="font-bold text-neon-blue mb-2">TypeScript</div>
+                            <div class="text-xs text-dark-300 mb-2">Checks immediately!</div>
+                            <div class="bg-dark-900 rounded p-2 font-mono text-xs">
+                                let age: number = "twenty"<br>
+                                <span class="text-neon-red">// ❌ Error: Not a number!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-dark-800/50 rounded-lg p-4">
+                    <div class="text-sm text-dark-400 mb-2">🏢 Who uses TypeScript?</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full bg-neon-blue/20 text-neon-blue text-sm">Microsoft</span>
+                        <span class="px-3 py-1 rounded-full bg-neon-cyan/20 text-neon-cyan text-sm">Google</span>
+                        <span class="px-3 py-1 rounded-full bg-neon-purple/20 text-neon-purple text-sm">Airbnb</span>
+                        <span class="px-3 py-1 rounded-full bg-neon-pink/20 text-neon-pink text-sm">Slack</span>
+                        <span class="px-3 py-1 rounded-full bg-neon-green/20 text-neon-green text-sm">Stripe</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDE 23: Go - SIMPLIFIED -->
+<section class="slide" data-slide="22">
+    <div class="slide-number text-gradient">23</div>
+    
+    <div class="absolute top-8 left-8 lg:left-24">
+        <div class="glass-card rounded-full px-4 py-2 flex items-center gap-2">
+            <span class="text-lg">💻</span>
+            <span class="text-xs uppercase tracking-wider text-dark-400">Chapter 3</span>
+            <span class="text-xs text-neon-cyan">Languages</span>
+        </div>
+    </div>
+    
+    <div class="slide-content pt-20">
+        <div class="grid lg:grid-cols-2 gap-8">
+            <div>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-20 h-20 rounded-2xl bg-cyan-400 flex items-center justify-center text-4xl">🐹</div>
+                    <div>
+                        <h1 class="text-4xl font-black text-white">Go (Golang)</h1>
+                        <div class="text-dark-400 text-lg">Made by Google for Big Systems</div>
+                    </div>
+                </div>
+                
+                <!-- Simple Analogy -->
+                <div class="glass-card rounded-xl p-5 mb-6 bg-gradient-to-r from-neon-cyan/10 to-transparent">
+                    <h3 class="font-bold mb-2 text-neon-cyan">🏭 Like a Factory Assembly Line</h3>
+                    <p class="text-sm text-dark-300">Go is designed to handle MANY things at once efficiently, like a factory with multiple assembly lines working simultaneously. It's what runs Docker, Kubernetes, and most cloud infrastructure!</p>
+                </div>
+                
+                <div class="space-y-3 mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Simple to learn</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Great for servers & cloud</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Fast like C, easy like Python</span>
+                    </div>
+                </div>
+                
+                <div class="bg-dark-800/50 rounded-lg p-4">
+                    <div class="text-sm text-dark-400 mb-2">🏢 Powers the cloud:</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full bg-neon-cyan/20 text-neon-cyan text-sm">🐳 Docker</span>
+                        <span class="px-3 py-1 rounded-full bg-neon-purple/20 text-neon-purple text-sm">☸️ Kubernetes</span>
+                        <span class="px-3 py-1 rounded-full bg-neon-pink/20 text-neon-pink text-sm">Terraform</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="glass-card rounded-xl p-5 mb-4">
+                    <div class="text-sm text-dark-400 mb-3">⚡ What Makes Go Special?</div>
+                    <div class="space-y-3">
+                        <div class="bg-dark-800/50 rounded-lg p-3">
+                            <div class="font-bold text-neon-cyan">Simple = Less Bugs</div>
+                            <div class="text-xs text-dark-300">Go only has 25 keywords (JavaScript has 63!). Simple means fewer ways to make mistakes.</div>
+                        </div>
+                        <div class="bg-dark-800/50 rounded-lg p-3">
+                            <div class="font-bold text-neon-purple">One File Output</div>
+                            <div class="text-xs text-dark-300">Compiles to a single file you can just copy and run anywhere. No installation needed!</div>
+                        </div>
+                        <div class="bg-dark-800/50 rounded-lg p-3">
+                            <div class="font-bold text-neon-green">Built for Scale</div>
+                            <div class="text-xs text-dark-300">Can handle millions of users easily. That's why all the cloud tools use it.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-xl p-4 bg-gradient-to-r from-neon-green/10 to-transparent">
+                    <p class="text-sm"><strong class="text-neon-green">💼 CEO Insight:</strong> If your backend team uses Go, they're thinking about scale and reliability. It's a mature, production-ready choice.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDE 24: Rust - SIMPLIFIED -->
+<section class="slide" data-slide="23">
+    <div class="slide-number text-gradient">24</div>
+    
+    <div class="absolute top-8 left-8 lg:left-24">
+        <div class="glass-card rounded-full px-4 py-2 flex items-center gap-2">
+            <span class="text-lg">💻</span>
+            <span class="text-xs uppercase tracking-wider text-dark-400">Chapter 3</span>
+            <span class="text-xs text-neon-cyan">Languages</span>
+        </div>
+    </div>
+    
+    <div class="slide-content pt-20">
+        <div class="grid lg:grid-cols-2 gap-8">
+            <div>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-20 h-20 rounded-2xl bg-orange-600 flex items-center justify-center text-4xl">🦀</div>
+                    <div>
+                        <h1 class="text-4xl font-black text-white">Rust</h1>
+                        <div class="text-dark-400 text-lg">Super Fast + Super Safe</div>
+                    </div>
+                </div>
+                
+                <!-- Simple Analogy -->
+                <div class="glass-card rounded-xl p-5 mb-6 bg-gradient-to-r from-neon-orange/10 to-transparent">
+                    <h3 class="font-bold mb-2 text-neon-orange">🏎️ Like a Race Car with Airbags</h3>
+                    <p class="text-sm text-dark-300">Rust gives you the SPEED of a race car (as fast as C/C++) but with safety features that prevent crashes. It's called "memory safe" - meaning hackers can't exploit common bugs!</p>
+                </div>
+                
+                <div class="space-y-3 mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Fast as C (fastest languages)</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Prevents common security bugs</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-orange text-xl">⚠</span>
+                        <span class="text-lg">Hard to learn (but worth it)</span>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-xl p-4 bg-gradient-to-r from-neon-pink/10 to-transparent">
+                    <p class="text-sm"><strong class="text-neon-pink">🔥 Hot in 2025:</strong> Linux kernel now accepts Rust code. Microsoft, Google, Amazon, Cloudflare all adopting it.</p>
+                </div>
+            </div>
+            
+            <div>
+                <div class="glass-card rounded-xl p-5 mb-4">
+                    <div class="text-sm text-dark-400 mb-3">🛡️ Why Companies Love Rust:</div>
+                    
+                    <div class="space-y-3">
+                        <div class="bg-dark-800/50 rounded-lg p-3">
+                            <div class="font-bold text-neon-cyan">70% of Security Bugs? Gone!</div>
+                            <div class="text-xs text-dark-300">Microsoft found that 70% of all their security problems were "memory bugs". Rust prevents these automatically.</div>
+                        </div>
+                        <div class="bg-dark-800/50 rounded-lg p-3">
+                            <div class="font-bold text-neon-purple">No More Crashes</div>
+                            <div class="text-xs text-dark-300">The compiler catches mistakes before you even run the code. Like spell-check but for serious bugs.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-dark-800/50 rounded-lg p-4">
+                    <div class="text-sm text-dark-400 mb-2">🏢 Who uses Rust?</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full bg-neon-orange/20 text-neon-orange text-sm">Discord</span>
+                        <span class="px-3 py-1 rounded-full bg-neon-cyan/20 text-neon-cyan text-sm">Cloudflare</span>
+                        <span class="px-3 py-1 rounded-full bg-neon-purple/20 text-neon-purple text-sm">Firefox</span>
+                        <span class="px-3 py-1 rounded-full bg-neon-pink/20 text-neon-pink text-sm">Dropbox</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDE 25: Java - SIMPLIFIED -->
+<section class="slide" data-slide="24">
+    <div class="slide-number text-gradient">25</div>
+    
+    <div class="absolute top-8 left-8 lg:left-24">
+        <div class="glass-card rounded-full px-4 py-2 flex items-center gap-2">
+            <span class="text-lg">💻</span>
+            <span class="text-xs uppercase tracking-wider text-dark-400">Chapter 3</span>
+            <span class="text-xs text-neon-cyan">Languages</span>
+        </div>
+    </div>
+    
+    <div class="slide-content pt-20">
+        <div class="grid lg:grid-cols-2 gap-8">
+            <div>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-20 h-20 rounded-2xl bg-red-600 flex items-center justify-center text-4xl">☕</div>
+                    <div>
+                        <h1 class="text-4xl font-black text-white">Java</h1>
+                        <div class="text-dark-400 text-lg">The Enterprise Workhorse</div>
+                    </div>
+                </div>
+                
+                <!-- Simple Analogy -->
+                <div class="glass-card rounded-xl p-5 mb-6 bg-gradient-to-r from-neon-red/10 to-transparent">
+                    <h3 class="font-bold mb-2 text-neon-red">🏦 Like a Reliable Old Bank</h3>
+                    <p class="text-sm text-dark-300">Java is the language of big, serious businesses. Banks, airlines, governments - they all run Java. It's been around since 1995 and is EXTREMELY reliable. Not exciting, but it works!</p>
+                </div>
+                
+                <div class="space-y-3 mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Runs on ANY device ("Write once, run anywhere")</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">30 years of battle-tested reliability</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-orange text-xl">⚠</span>
+                        <span class="text-lg">Verbose (lots of boilerplate code)</span>
+                    </div>
+                </div>
+                
+                <div class="bg-dark-800/50 rounded-lg p-4">
+                    <div class="text-2xl font-bold text-neon-red">3 Billion+</div>
+                    <div class="text-sm text-dark-400">Devices run Java (including every Android phone)</div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="glass-card rounded-xl p-5 mb-4">
+                    <div class="text-sm text-dark-400 mb-3">🏢 Java Runs These:</div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="bg-dark-800/50 rounded-lg p-3 text-center">
+                            <div class="text-2xl mb-1">🤖</div>
+                            <div class="text-sm font-bold text-neon-cyan">Android</div>
+                            <div class="text-xs text-dark-400">Every Android app</div>
+                        </div>
+                        <div class="bg-dark-800/50 rounded-lg p-3 text-center">
+                            <div class="text-2xl mb-1">🏦</div>
+                            <div class="text-sm font-bold text-neon-purple">Banks</div>
+                            <div class="text-xs text-dark-400">Most banking systems</div>
+                        </div>
+                        <div class="bg-dark-800/50 rounded-lg p-3 text-center">
+                            <div class="text-2xl mb-1">✈️</div>
+                            <div class="text-sm font-bold text-neon-pink">Airlines</div>
+                            <div class="text-xs text-dark-400">Booking systems</div>
+                        </div>
+                        <div class="bg-dark-800/50 rounded-lg p-3 text-center">
+                            <div class="text-2xl mb-1">🎮</div>
+                            <div class="text-sm font-bold text-neon-green">Minecraft</div>
+                            <div class="text-xs text-dark-400">The whole game!</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-xl p-4 bg-gradient-to-r from-neon-green/10 to-transparent">
+                    <p class="text-sm"><strong class="text-neon-green">💼 CEO Insight:</strong> If your company deals with banking, healthcare, or government - you'll likely encounter Java. It's not trendy, but it's extremely reliable.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDE 26: C/C++ - SIMPLIFIED -->
+<section class="slide" data-slide="25">
+    <div class="slide-number text-gradient">26</div>
+    
+    <div class="absolute top-8 left-8 lg:left-24">
+        <div class="glass-card rounded-full px-4 py-2 flex items-center gap-2">
+            <span class="text-lg">💻</span>
+            <span class="text-xs uppercase tracking-wider text-dark-400">Chapter 3</span>
+            <span class="text-xs text-neon-cyan">Languages</span>
+        </div>
+    </div>
+    
+    <div class="slide-content pt-20">
+        <div class="grid lg:grid-cols-2 gap-8">
+            <div>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-20 h-20 rounded-2xl bg-blue-800 flex items-center justify-center text-3xl font-black text-white">C++</div>
+                    <div>
+                        <h1 class="text-4xl font-black text-white">C / C++</h1>
+                        <div class="text-dark-400 text-lg">The Foundation of Everything</div>
+                    </div>
+                </div>
+                
+                <!-- Simple Analogy -->
+                <div class="glass-card rounded-xl p-5 mb-6 bg-gradient-to-r from-neon-blue/10 to-transparent">
+                    <h3 class="font-bold mb-2 text-neon-blue">🏗️ Like the Steel Beams in a Building</h3>
+                    <p class="text-sm text-dark-300">C and C++ are the foundation everything else is built on. Your operating system, your browser, your game engine - all written in C/C++. They're the FASTEST languages but also the most dangerous (easy to make security bugs).</p>
+                </div>
+                
+                <div class="space-y-3 mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Maximum possible speed</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Direct hardware control</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-red text-xl">✗</span>
+                        <span class="text-lg">Easy to create security bugs</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="glass-card rounded-xl p-5 mb-4">
+                    <div class="text-sm text-dark-400 mb-3">🌍 Everything is Built on C/C++:</div>
+                    <div class="grid grid-cols-2 gap-2 text-sm">
+                        <div class="bg-dark-800/50 rounded p-2">💻 Windows</div>
+                        <div class="bg-dark-800/50 rounded p-2">🍎 macOS</div>
+                        <div class="bg-dark-800/50 rounded p-2">🐧 Linux</div>
+                        <div class="bg-dark-800/50 rounded p-2">🌐 Chrome</div>
+                        <div class="bg-dark-800/50 rounded p-2">🦊 Firefox</div>
+                        <div class="bg-dark-800/50 rounded p-2">🐍 Python itself!</div>
+                        <div class="bg-dark-800/50 rounded p-2">🎮 ALL AAA Games</div>
+                        <div class="bg-dark-800/50 rounded p-2">🎬 Adobe Software</div>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-xl p-4 bg-gradient-to-r from-neon-orange/10 to-transparent">
+                    <p class="text-sm"><strong class="text-neon-orange">Fun Fact:</strong> C was created in 1972 (that's over 50 years ago!) and still runs most of the world's critical software. The language that runs your car, plane, and medical devices!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDE 27: C# - SIMPLIFIED -->
+<section class="slide" data-slide="26">
+    <div class="slide-number text-gradient">27</div>
+    
+    <div class="absolute top-8 left-8 lg:left-24">
+        <div class="glass-card rounded-full px-4 py-2 flex items-center gap-2">
+            <span class="text-lg">💻</span>
+            <span class="text-xs uppercase tracking-wider text-dark-400">Chapter 3</span>
+            <span class="text-xs text-neon-cyan">Languages</span>
+        </div>
+    </div>
+    
+    <div class="slide-content pt-20">
+        <div class="grid lg:grid-cols-2 gap-8">
+            <div>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-20 h-20 rounded-2xl bg-purple-700 flex items-center justify-center text-3xl font-black text-white">C#</div>
+                    <div>
+                        <h1 class="text-4xl font-black text-white">C#</h1>
+                        <div class="text-dark-400 text-lg">Microsoft's Language for Games & Apps</div>
+                    </div>
+                </div>
+                
+                <!-- Simple Analogy -->
+                <div class="glass-card rounded-xl p-5 mb-6 bg-gradient-to-r from-neon-purple/10 to-transparent">
+                    <h3 class="font-bold mb-2 text-neon-purple">🎮 Like Java but for Games</h3>
+                    <p class="text-sm text-dark-300">C# is Microsoft's version of Java. It's modern, powerful, and runs the Unity game engine - which powers 70% of mobile games! If you've played games on your phone, you've used C#.</p>
+                </div>
+                
+                <div class="space-y-3 mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Powers Unity (most mobile games)</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Great for Windows apps</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Modern & well-designed</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="glass-card rounded-xl p-5 mb-4">
+                    <div class="text-sm text-dark-400 mb-3">🎮 Games Made with C# (Unity):</div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="bg-dark-800/50 rounded-lg p-3 text-center">
+                            <div class="text-2xl mb-1">🎮</div>
+                            <div class="text-sm font-bold">Pokémon GO</div>
+                        </div>
+                        <div class="bg-dark-800/50 rounded-lg p-3 text-center">
+                            <div class="text-2xl mb-1">👾</div>
+                            <div class="text-sm font-bold">Among Us</div>
+                        </div>
+                        <div class="bg-dark-800/50 rounded-lg p-3 text-center">
+                            <div class="text-2xl mb-1">🏃</div>
+                            <div class="text-sm font-bold">Temple Run</div>
+                        </div>
+                        <div class="bg-dark-800/50 rounded-lg p-3 text-center">
+                            <div class="text-2xl mb-1">⬜</div>
+                            <div class="text-sm font-bold">Cuphead</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-xl p-4 bg-gradient-to-r from-neon-green/10 to-transparent">
+                    <p class="text-sm"><strong class="text-neon-green">💼 CEO Insight:</strong> If you're building a game (especially mobile), Unity + C# is a popular and proven choice.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDE 28: Swift - SIMPLIFIED -->
+<section class="slide" data-slide="27">
+    <div class="slide-number text-gradient">28</div>
+    
+    <div class="absolute top-8 left-8 lg:left-24">
+        <div class="glass-card rounded-full px-4 py-2 flex items-center gap-2">
+            <span class="text-lg">💻</span>
+            <span class="text-xs uppercase tracking-wider text-dark-400">Chapter 3</span>
+            <span class="text-xs text-neon-cyan">Languages</span>
+        </div>
+    </div>
+    
+    <div class="slide-content pt-20">
+        <div class="grid lg:grid-cols-2 gap-8">
+            <div>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-20 h-20 rounded-2xl bg-orange-500 flex items-center justify-center text-4xl">🍎</div>
+                    <div>
+                        <h1 class="text-4xl font-black text-white">Swift</h1>
+                        <div class="text-dark-400 text-lg">Apple's Language for iPhone Apps</div>
+                    </div>
+                </div>
+                
+                <!-- Simple Analogy -->
+                <div class="glass-card rounded-xl p-5 mb-6 bg-gradient-to-r from-neon-orange/10 to-transparent">
+                    <h3 class="font-bold mb-2 text-neon-orange">📱 The Official iPhone Language</h3>
+                    <p class="text-sm text-dark-300">If you want to build an iPhone, iPad, Mac, or Apple Watch app - you use Swift. Apple created it in 2014 to be modern, safe, and fast. All native Apple apps use it.</p>
+                </div>
+                
+                <div class="space-y-3 mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Required for native iOS apps</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Fast and safe</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-orange text-xl">⚠</span>
+                        <span class="text-lg">Only for Apple devices</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="glass-card rounded-xl p-5 mb-4">
+                    <div class="text-sm text-dark-400 mb-3">📱 Swift vs Cross-Platform:</div>
+                    
+                    <div class="space-y-3">
+                        <div class="bg-neon-orange/10 border border-neon-orange/30 rounded-lg p-3">
+                            <div class="font-bold text-neon-orange mb-1">Swift (Native)</div>
+                            <div class="text-xs text-dark-300">Best performance, best integration with Apple features. But ONLY works on Apple devices.</div>
+                        </div>
+                        <div class="bg-neon-cyan/10 border border-neon-cyan/30 rounded-lg p-3">
+                            <div class="font-bold text-neon-cyan mb-1">React Native / Flutter</div>
+                            <div class="text-xs text-dark-300">One codebase for BOTH iPhone and Android. Faster to build, but slightly lower performance.</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-xl p-4 bg-gradient-to-r from-neon-green/10 to-transparent">
+                    <p class="text-sm"><strong class="text-neon-green">💼 CEO Insight:</strong> If your app needs the best iPhone experience (camera, maps, etc.), go Swift. If you need both iPhone AND Android, consider cross-platform.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDE 29: Kotlin - SIMPLIFIED -->
+<section class="slide" data-slide="28">
+    <div class="slide-number text-gradient">29</div>
+    
+    <div class="absolute top-8 left-8 lg:left-24">
+        <div class="glass-card rounded-full px-4 py-2 flex items-center gap-2">
+            <span class="text-lg">💻</span>
+            <span class="text-xs uppercase tracking-wider text-dark-400">Chapter 3</span>
+            <span class="text-xs text-neon-cyan">Languages</span>
+        </div>
+    </div>
+    
+    <div class="slide-content pt-20">
+        <div class="grid lg:grid-cols-2 gap-8">
+            <div>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-20 h-20 rounded-2xl bg-gradient-to-br from-purple-500 to-orange-400 flex items-center justify-center text-3xl font-black text-white">K</div>
+                    <div>
+                        <h1 class="text-4xl font-black text-white">Kotlin</h1>
+                        <div class="text-dark-400 text-lg">Google's Language for Android Apps</div>
+                    </div>
+                </div>
+                
+                <!-- Simple Analogy -->
+                <div class="glass-card rounded-xl p-5 mb-6 bg-gradient-to-r from-neon-purple/10 to-transparent">
+                    <h3 class="font-bold mb-2 text-neon-purple">🤖 Like Swift, but for Android</h3>
+                    <p class="text-sm text-dark-300">If Swift is Apple's language, Kotlin is Google's language for Android. Google officially recommended it in 2019 as THE language for Android development. It's like a modern, cleaner version of Java.</p>
+                </div>
+                
+                <div class="space-y-3 mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Google's preferred language for Android</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">50% less code than Java</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Works with existing Java code</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="glass-card rounded-xl p-5 mb-4">
+                    <div class="text-sm text-dark-400 mb-3">📱 Mobile Language Summary:</div>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-dark-800/50 rounded-lg p-4 text-center border-2 border-neon-orange/30">
+                            <div class="text-3xl mb-2">🍎</div>
+                            <div class="font-bold text-neon-orange">iPhone</div>
+                            <div class="text-sm">Swift</div>
+                        </div>
+                        <div class="bg-dark-800/50 rounded-lg p-4 text-center border-2 border-neon-green/30">
+                            <div class="text-3xl mb-2">🤖</div>
+                            <div class="font-bold text-neon-green">Android</div>
+                            <div class="text-sm">Kotlin</div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-4 text-center text-sm text-dark-400">
+                        Or use React Native / Flutter for BOTH at once!
+                    </div>
+                </div>
+                
+                <div class="bg-dark-800/50 rounded-lg p-4">
+                    <div class="text-sm text-dark-400 mb-2">🏢 Who uses Kotlin?</div>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 rounded-full bg-neon-purple/20 text-neon-purple text-sm">Netflix</span>
+                        <span class="px-3 py-1 rounded-full bg-neon-cyan/20 text-neon-cyan text-sm">Pinterest</span>
+                        <span class="px-3 py-1 rounded-full bg-neon-pink/20 text-neon-pink text-sm">Uber</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDE 30: PHP - SIMPLIFIED -->
+<section class="slide" data-slide="29">
+    <div class="slide-number text-gradient">30</div>
+    
+    <div class="absolute top-8 left-8 lg:left-24">
+        <div class="glass-card rounded-full px-4 py-2 flex items-center gap-2">
+            <span class="text-lg">💻</span>
+            <span class="text-xs uppercase tracking-wider text-dark-400">Chapter 3</span>
+            <span class="text-xs text-neon-cyan">Languages</span>
+        </div>
+    </div>
+    
+    <div class="slide-content pt-20">
+        <div class="grid lg:grid-cols-2 gap-8">
+            <div>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-20 h-20 rounded-2xl bg-indigo-700 flex items-center justify-center text-3xl font-black text-white">PHP</div>
+                    <div>
+                        <h1 class="text-4xl font-black text-white">PHP</h1>
+                        <div class="text-dark-400 text-lg">The WordPress Language</div>
+                    </div>
+                </div>
+                
+                <!-- Simple Analogy -->
+                <div class="glass-card rounded-xl p-5 mb-6 bg-gradient-to-r from-neon-indigo/10 to-transparent">
+                    <h3 class="font-bold mb-2 text-indigo-400">📝 Powers 43% of ALL Websites</h3>
+                    <p class="text-sm text-dark-300">PHP runs WordPress, which runs almost half of all websites on the internet! If you have a blog, company site, or online store - there's a good chance it's PHP. Not fancy, but it WORKS.</p>
+                </div>
+                
+                <div class="space-y-3 mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Powers WordPress (43% of web)</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Cheap hosting everywhere</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-orange text-xl">⚠</span>
+                        <span class="text-lg">Older, less "cool" now</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="glass-card rounded-xl p-5 mb-4">
+                    <div class="text-sm text-dark-400 mb-3">🌐 Built with PHP:</div>
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="bg-dark-800/50 rounded-lg p-3 text-center">
+                            <div class="text-2xl mb-1">📝</div>
+                            <div class="text-sm font-bold">WordPress</div>
+                            <div class="text-xs text-dark-400">43% of all websites</div>
+                        </div>
+                        <div class="bg-dark-800/50 rounded-lg p-3 text-center">
+                            <div class="text-2xl mb-1">📖</div>
+                            <div class="text-sm font-bold">Wikipedia</div>
+                            <div class="text-xs text-dark-400">Free encyclopedia</div>
+                        </div>
+                        <div class="bg-dark-800/50 rounded-lg p-3 text-center">
+                            <div class="text-2xl mb-1">👤</div>
+                            <div class="text-sm font-bold">Facebook</div>
+                            <div class="text-xs text-dark-400">(Originally)</div>
+                        </div>
+                        <div class="bg-dark-800/50 rounded-lg p-3 text-center">
+                            <div class="text-2xl mb-1">📧</div>
+                            <div class="text-sm font-bold">Mailchimp</div>
+                            <div class="text-xs text-dark-400">Email marketing</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-xl p-4 bg-gradient-to-r from-neon-green/10 to-transparent">
+                    <p class="text-sm"><strong class="text-neon-green">💼 CEO Insight:</strong> If someone offers WordPress or PHP - it works fine! But for new custom projects, consider more modern options.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDE 31: SQL - SIMPLIFIED -->
+<section class="slide" data-slide="30">
+    <div class="slide-number text-gradient">31</div>
+    
+    <div class="absolute top-8 left-8 lg:left-24">
+        <div class="glass-card rounded-full px-4 py-2 flex items-center gap-2">
+            <span class="text-lg">💻</span>
+            <span class="text-xs uppercase tracking-wider text-dark-400">Chapter 3</span>
+            <span class="text-xs text-neon-cyan">Languages</span>
+        </div>
+    </div>
+    
+    <div class="slide-content pt-20">
+        <div class="grid lg:grid-cols-2 gap-8">
+            <div>
+                <div class="flex items-center gap-4 mb-6">
+                    <div class="w-20 h-20 rounded-2xl bg-blue-600 flex items-center justify-center text-3xl font-black text-white">SQL</div>
+                    <div>
+                        <h1 class="text-4xl font-black text-white">SQL</h1>
+                        <div class="text-dark-400 text-lg">The Librarian for Your Data</div>
+                    </div>
+                </div>
+                
+                <!-- Simple Analogy -->
+                <div class="glass-card rounded-xl p-5 mb-6 bg-gradient-to-r from-neon-cyan/10 to-transparent">
+                    <h3 class="font-bold mb-2 text-neon-cyan">📚 Like Asking a Librarian</h3>
+                    <p class="text-sm text-dark-300">SQL is how you talk to databases. It's like having a librarian who can instantly find any book. You say "Find all customers who spent over $100 last month" and SQL fetches exactly that. EVERY business uses SQL to store and find data!</p>
+                </div>
+                
+                <div class="space-y-3 mb-6">
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Used by EVERY company with data</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">50 years old, still #1</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <span class="text-neon-green text-xl">✓</span>
+                        <span class="text-lg">Reads like English</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <div class="glass-card rounded-xl p-5 mb-4">
+                    <div class="text-sm text-dark-400 mb-3">📊 SQL in Plain English:</div>
+                    
+                    <div class="space-y-3">
+                        <div class="bg-dark-800/50 rounded-lg p-3">
+                            <div class="text-xs text-dark-400">You say:</div>
+                            <div class="text-neon-cyan">"Find all customers from New York"</div>
+                            <div class="text-xs text-dark-400 mt-1">SQL version:</div>
+                            <div class="text-xs font-mono text-neon-green">SELECT * FROM customers WHERE city = 'New York'</div>
+                        </div>
+                        <div class="bg-dark-800/50 rounded-lg p-3">
+                            <div class="text-xs text-dark-400">You say:</div>
+                            <div class="text-neon-cyan">"How much did we sell last month?"</div>
+                            <div class="text-xs text-dark-400 mt-1">SQL version:</div>
+                            <div class="text-xs font-mono text-neon-green">SELECT SUM(amount) FROM sales WHERE month = 'Dec'</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-xl p-4 bg-gradient-to-r from-neon-green/10 to-transparent">
+                    <p class="text-sm"><strong class="text-neon-green">💼 CEO Insight:</strong> When your team talks about "querying the database" - they're using SQL to find information!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDE 32: Other Languages Quick Reference - SIMPLIFIED -->
+<section class="slide" data-slide="31">
+    <div class="slide-number text-gradient">32</div>
+    
+    <div class="absolute top-8 left-8 lg:left-24">
+        <div class="glass-card rounded-full px-4 py-2 flex items-center gap-2">
+            <span class="text-lg">💻</span>
+            <span class="text-xs uppercase tracking-wider text-dark-400">Chapter 3</span>
+            <span class="text-xs text-neon-cyan">Languages</span>
+        </div>
+    </div>
+    
+    <div class="slide-content pt-20">
+        <div class="mb-6">
+            <h1 class="text-3xl font-black text-white mb-2">
+                <span class="text-gradient">More Languages</span> (Quick Reference)
+            </h1>
+            <p class="text-dark-400">These are less common but you might hear about them:</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-4">
+            <div class="glass-card rounded-xl p-5">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-12 h-12 rounded-xl bg-red-600 flex items-center justify-center text-2xl">💎</div>
+                    <div>
+                        <h3 class="font-bold">Ruby</h3>
+                        <div class="text-xs text-neon-pink">For Startups</div>
+                    </div>
+                </div>
+                <p class="text-sm text-dark-300 mb-2">Designed to make programmers happy. Powers Shopify and GitHub.</p>
+                <div class="text-xs bg-dark-800/50 rounded p-2">
+                    <span class="text-neon-green">✓</span> Fast to build
+                    <span class="text-dark-500">|</span>
+                    <span class="text-neon-orange">⚠</span> Slower speed
+                </div>
+            </div>
+            
+            <div class="glass-card rounded-xl p-5">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-12 h-12 rounded-xl bg-red-700 flex items-center justify-center text-xl font-bold text-white">Scala</div>
+                    <div>
+                        <h3 class="font-bold">Scala</h3>
+                        <div class="text-xs text-neon-cyan">For Big Data</div>
+                    </div>
+                </div>
+                <p class="text-sm text-dark-300 mb-2">Used by data teams to process huge amounts of information at once.</p>
+                <div class="text-xs bg-dark-800/50 rounded p-2">
+                    <span class="text-neon-green">✓</span> Handles huge data
+                    <span class="text-dark-500">|</span>
+                    <span class="text-neon-orange">⚠</span> Complex
+                </div>
+            </div>
+            
+            <div class="glass-card rounded-xl p-5">
+                <div class="flex items-center gap-3 mb-3">
+                    <div class="w-12 h-12 rounded-xl bg-purple-600 flex items-center justify-center text-2xl">💧</div>
+                    <div>
+                        <h3 class="font-bold">Elixir</h3>
+                        <div class="text-xs text-neon-purple">Never Crashes</div>
+                    </div>
+                </div>
+                <p class="text-sm text-dark-300 mb-2">Discord uses this! Designed for systems that can never go down.</p>
+                <div class="text-xs bg-dark-800/50 rounded p-2">
+                    <span class="text-neon-green">✓</span> Super reliable
+                    <span class="text-dark-500">|</span>
+                    <span class="text-neon-orange">⚠</span> Niche
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-6 glass-card rounded-xl p-4 bg-gradient-to-r from-neon-green/10 to-transparent">
+            <p class="text-sm"><strong class="text-neon-green">💼 CEO Insight:</strong> You probably won't use these directly. But if your team mentions them, now you know what they're for!</p>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDE 33: Simple Language Cheat Sheet - CEO Version -->
+<section class="slide" data-slide="32">
+    <div class="slide-number text-gradient">33</div>
+    
+    <div class="absolute top-8 left-8 lg:left-24">
+        <div class="glass-card rounded-full px-4 py-2 flex items-center gap-2">
+            <span class="text-lg">💻</span>
+            <span class="text-xs uppercase tracking-wider text-dark-400">Chapter 3</span>
+            <span class="text-xs text-neon-cyan">Languages</span>
+        </div>
+    </div>
+    
+    <div class="slide-content pt-20">
+        <div class="mb-6">
+            <h1 class="text-3xl font-black text-white mb-2">
+                🗺️ <span class="text-gradient">Language Cheat Sheet</span>
+            </h1>
+            <p class="text-dark-400">What to use for what - the simple version:</p>
+        </div>
+        
+        <div class="grid md:grid-cols-2 gap-4">
+            <!-- Left Column: What you're building -->
+            <div class="space-y-3">
+                <div class="glass-card rounded-xl p-4 flex items-center gap-4">
+                    <div class="text-4xl">🌐</div>
+                    <div class="flex-1">
+                        <div class="font-bold">Website</div>
+                        <div class="text-sm text-dark-400">What users see and click on</div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-neon-cyan font-bold">JavaScript</div>
+                        <div class="text-xs text-dark-400">or TypeScript</div>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-xl p-4 flex items-center gap-4">
+                    <div class="text-4xl">⚙️</div>
+                    <div class="flex-1">
+                        <div class="font-bold">Server / Backend</div>
+                        <div class="text-sm text-dark-400">Business logic behind the scenes</div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-neon-green font-bold">Python, Go, Java</div>
+                        <div class="text-xs text-dark-400">or Node.js</div>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-xl p-4 flex items-center gap-4">
+                    <div class="text-4xl">📱</div>
+                    <div class="flex-1">
+                        <div class="font-bold">iPhone App</div>
+                        <div class="text-sm text-dark-400">Native Apple experience</div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-neon-orange font-bold">Swift</div>
+                        <div class="text-xs text-dark-400">Apple's language</div>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-xl p-4 flex items-center gap-4">
+                    <div class="text-4xl">🤖</div>
+                    <div class="flex-1">
+                        <div class="font-bold">Android App</div>
+                        <div class="text-sm text-dark-400">Native Google experience</div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-neon-purple font-bold">Kotlin</div>
+                        <div class="text-xs text-dark-400">Google's language</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Right Column: More use cases -->
+            <div class="space-y-3">
+                <div class="glass-card rounded-xl p-4 flex items-center gap-4">
+                    <div class="text-4xl">📱➕🤖</div>
+                    <div class="flex-1">
+                        <div class="font-bold">iPhone + Android</div>
+                        <div class="text-sm text-dark-400">One app for both</div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-neon-pink font-bold">React Native</div>
+                        <div class="text-xs text-dark-400">or Flutter</div>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-xl p-4 flex items-center gap-4">
+                    <div class="text-4xl">🤖</div>
+                    <div class="flex-1">
+                        <div class="font-bold">AI & Data</div>
+                        <div class="text-sm text-dark-400">Machine learning, analysis</div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-neon-cyan font-bold">Python</div>
+                        <div class="text-xs text-dark-400">The #1 choice</div>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-xl p-4 flex items-center gap-4">
+                    <div class="text-4xl">🎮</div>
+                    <div class="flex-1">
+                        <div class="font-bold">Games</div>
+                        <div class="text-sm text-dark-400">Mobile or console games</div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-neon-green font-bold">C# (Unity)</div>
+                        <div class="text-xs text-dark-400">or C++ (AAA)</div>
+                    </div>
+                </div>
+                
+                <div class="glass-card rounded-xl p-4 flex items-center gap-4">
+                    <div class="text-4xl">📊</div>
+                    <div class="flex-1">
+                        <div class="font-bold">Store & Find Data</div>
+                        <div class="text-sm text-dark-400">Databases, reports</div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-neon-orange font-bold">SQL</div>
+                        <div class="text-xs text-dark-400">Universal</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-6 text-center">
+            <div class="inline-flex items-center gap-3 glass-card rounded-full px-6 py-3">
+                <span class="text-neon-green">✓</span>
+                <span class="text-sm">Chapter 3 Complete</span>
+                <span class="text-lg">→</span>
+                <span class="text-sm text-neon-cyan">Next: The Modern Tech Stack</span>
+            </div>
+        </div>
+    </div>
+</section>
