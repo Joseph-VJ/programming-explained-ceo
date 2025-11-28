@@ -40,7 +40,7 @@
                     colors: {
                         dark: {
                             50: '#f8fafc', 100: '#FFFFFF', 200: '#e2e8f0', 300: '#FFFFFF',
-                            400: '#94a3b8', 500: '#64748b', 600: '#475569', 700: '#E2E8F0',
+                            400: '#64748b', 500: '#64748b', 600: '#475569', 700: '#E2E8F0',
                             800: '#FFFFFF', 900: '#FFFFFF', 950: '#FFFFFF',
                         },
                         neon: {
@@ -81,7 +81,7 @@
         :root {
             --color-bg-primary: #f8fafc;
             --color-bg-secondary: #ffffff;
-            --color-text-primary: #FFFFFF;
+            --color-text-primary: #0f172a;
             --color-text-secondary: #475569;
             --color-text-muted: #64748b;
             --color-accent-blue: #2563eb;
@@ -90,9 +90,9 @@
             --color-accent-green: #059669;
             --color-accent-orange: #ea580c;
             --color-accent-cyan: #0891b2;
-            --glass-bg: rgba(255, 255, 255, 0.8);
+            --glass-bg: rgba(255, 255, 255, 0.95);
             --glass-border: rgba(0, 0, 0, 0.08);
-            --card-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            --card-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
         
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -108,7 +108,7 @@
         }
         
         ::-webkit-scrollbar { width: 8px; }
-        ::-webkit-scrollbar-track { background: #FFFFFF; }
+        ::-webkit-scrollbar-track { background: #F1F5F9; }
         ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, var(--color-accent-blue), var(--color-accent-purple)); border-radius: 4px; }
         
         ::selection { background: rgba(37, 99, 235, 0.2); }
@@ -125,17 +125,18 @@
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border: 1px solid var(--glass-border);
-            box-shadow: var(--card-shadow);
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
         
         .code-block {
-            background: #FFFFFF;
+            background: #F8F9FA;
             border: 1px solid rgba(0, 0, 0, 0.1);
             border-radius: 0.5rem;
             padding: 1rem;
             font-family: 'JetBrains Mono', monospace;
             overflow-x: auto;
-            color: #e2e8f0;
+            color: #0f172a;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         
         .slide {
