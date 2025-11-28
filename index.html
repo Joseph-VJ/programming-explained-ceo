@@ -346,20 +346,9 @@
             transition: opacity 0.2s;
         }
         
-        /* Desktop hover effect */
-        @media (hover: hover) and (pointer: fine) {
-            .slide-controls:hover {
-                opacity: 1;
-                background: rgba(255, 255, 255, 0.95);
-            }
-        }
-        
-        /* Touch devices - always visible */
-        @media (hover: none), (pointer: coarse) {
-            .slide-controls {
-                opacity: 1;
-                background: rgba(255, 255, 255, 0.95);
-            }
+        .slide-controls:hover {
+            opacity: 1;
+            background: rgba(255, 255, 255, 0.95);
         }
         
         .control-btn {
